@@ -18,4 +18,10 @@ router.post("/api/burgers", (req, res) => {
     });
 })
 
+router.put('/api/burgers/:name', (req, res) => {
+    burger.update(
+        //send data to model
+    );
+})
+
 module.exports = router;

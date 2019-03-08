@@ -16,6 +16,9 @@ $('#addBurger').on('submit', (event)=>{
 $('.devour').click((event)=>{
     var name = $(this).attr('name');
     console.log(name);
+
+    //AJAX Put REQUEST
+
     // $.ajax('/api/burgers/:name', {
     //     type: 'PUT',
     //     data: 
