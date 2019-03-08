@@ -1,0 +1,16 @@
+<h1>Eat-Da-Burger!</h1>
+
+{{!-- Burger input bar --}}
+<form id="addBurger">
+    <div>
+        <label for="textBar">Enter a burger you'd like to eat!</label><br>
+        <input type="text" id="textBar" name="burger_name"/>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+
+<ul>
+  {{#each burgers}}
+    {{> burger-block}}
+  {{/each}}
+</ul>
